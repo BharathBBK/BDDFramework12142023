@@ -46,7 +46,7 @@ public class LoginStepsDefinition {
 
 	@Then("user is navigated to home screen")
 	public void user_is_navigated_to_home_screen() {
-	    
+	    System.out.println("Logged in successfully");
 		WebElement ele = driver.findElement(By.xpath("//div[contains(text(),'Products')]"));
 		
 		String label = ele.getText();
